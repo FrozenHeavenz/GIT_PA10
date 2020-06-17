@@ -28,6 +28,10 @@ public class Player : MonoBehaviour
             thisAnimation.Play();
             rb.velocity = (transform.up * Flapflap);
         }
+        if(points >= 500)
+        {
+            SceneManager.LoadScene("Win");
+        }
 
     }
 
